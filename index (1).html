@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optima Human Flourishing | Organizational Culture · Group Wellbeing · Personal Transformation</title>
+<meta name="description" content="Enterprise organizational culture, group therapy & coaching, and personal transformation services by certified practitioners. Evidence-based CBT, NLP, Gestalt, ISO-aligned sustainability and ESG consulting in India.">
+<meta name="keywords" content="organizational culture consulting India, employee wellness, CBT coaching, NLP therapy, Gestalt group therapy, women's circles, ESG consulting, CSR sustainability, mental health counseling, personal effectiveness coaching, LAB profiling, REBT therapy, ACT therapy, metaphor therapy, gender sensitisation, Just Transition">
+<meta property="og:title" content="Optima Human Flourishing | Transform. Thrive. Sustain.">
+<meta property="og:description" content="Enterprise organizational culture, group wellbeing and personal transformation services powered by 20+ years of evidence-based practice.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1410;
+    --cream: #f5f0e8;
+    --warm: #e8ddc8;
+    --gold: #b8955a;
+    --gold-lt: #d4b07a;
+    --sage: #7a9e8e;
+    --sage-dk: #4e7a6a;
+    --rust: #c4603a;
+    --rust-lt: #e8856a;
+    --plum: #5a3d5c;
+    --plum-lt: #8a6a8c;
+    --mist: #eef3f1;
+    --white: #fdfaf6;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 2rem;
+    --text-4xl: 2.75rem;
+    --text-5xl: 3.75rem;
+    --text-6xl: 5rem;
+    --shadow: 0 4px 24px rgba(26,20,16,0.08);
+    --shadow-lg: 0 12px 48px rgba(26,20,16,0.14);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+  h1,h2,h3,h4 { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top:0; left:0; right:0; z-index:100;
+    background: rgba(253,250,246,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184,149,90,0.2);
+    padding: 0 5vw;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem; font-weight: 600; color: var(--ink); text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold); color: var(--white);
+    border: none; padding: 0.55rem 1.4rem;
+    font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 500;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    cursor: pointer; text-decoration: none;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--ink); }
+  .hamburger { display: none; flex-direction: column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; }
+  .hamburger span { display:block; width:22px; height:2px; background:var(--ink); transition:all 0.3s; }
+
+  /* ── SECTIONS ── */
+  section { min-height: 100vh; }
+
+  /* ── HOME ── */
+  #home {
+    position: relative; overflow: hidden;
+    background: var(--cream);
+    display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh;
+  }
+  .home-left {
+    padding: 120px 5vw 80px 8vw;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; z-index:2;
+  }
+  .home-tag {
+    font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500; margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .home-tag::before { content:''; display:block; width:32px; height:1px; background:var(--gold); }
+  .home-h1 {
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 300; line-height: 1.08;
+    color: var(--ink); margin-bottom: 1.75rem;
+  }
+  .home-h1 em { font-style: italic; color: var(--gold); }
+  .home-desc {
+    font-size: 1.05rem; line-height: 1.7; color: #4a3e35;
+    max-width: 480px; margin-bottom: 2.5rem; font-weight: 300;
+  }
+  .home-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--ink); color: var(--white);
+    padding: 0.85rem 2rem; font-size: 0.82rem;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    text-decoration: none; font-weight: 500; transition: all 0.25s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold); }
+  .btn-outline {
+    border: 1.5px solid var(--ink); color: var(--ink);
+    padding: 0.85rem 2rem; font-size: 0.82rem;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    text-decoration: none; font-weight: 500; transition: all 0.25s;
+    display: inline-block;
+  }
+  .btn-outline:hover { background: var(--ink); color: var(--white); }
+  .home-right {
+    position: relative; overflow: hidden;
+  }
+  .home-img-grid {
+    position: absolute; inset:0;
+    display: grid; grid-template-rows: 1fr 1fr; gap: 3px;
+  }
+  .home-img-grid img {
+    width:100%; height:100%; object-fit: cover; display: block;
+  }
+  .home-overlay {
+    position: absolute; inset:0;
+    background: linear-gradient(135deg, rgba(245,240,232,0.15) 0%, rgba(90,61,92,0.08) 100%);
+  }
+  .home-stat-bar {
+    background: var(--ink); color: var(--white);
+    display: flex; gap: 0;
+    position: relative; z-index: 10;
+  }
+  .stat { flex:1; padding: 1.5rem 2rem; border-right: 1px solid rgba(255,255,255,0.1); }
+  .stat:last-child { border-right: none; }
+  .stat-n {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem; font-weight: 300; color: var(--gold-lt);
+    display: block; line-height: 1;
+  }
+  .stat-l { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.65; margin-top:0.35rem; }
+
+  /* ── SERVICES ── */
+  #services {
+    background: var(--white); padding: 100px 5vw;
+    min-height: auto;
+  }
+  .section-header { text-align: center; margin-bottom: 4rem; }
+  .section-tag {
+    font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500; display: block; margin-bottom: 1rem;
+  }
+  .section-h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300; line-height: 1.15; color: var(--ink);
+  }
+  .section-h2 em { font-style: italic; color: var(--sage-dk); }
+  .section-sub {
+    font-size: 1rem; color: #6a5e55; font-weight: 300;
+    max-width: 560px; margin: 1rem auto 0; line-height: 1.65;
+  }
+  .service-tabs {
+    display: flex; justify-content: center; gap: 0; margin-bottom: 3.5rem;
+    border: 1px solid var(--warm); flex-wrap: wrap;
+  }
+  .tab-btn {
+    padding: 0.85rem 2rem; font-size: 0.78rem; letter-spacing: 0.1em;
+    text-transform: uppercase; font-weight: 500;
+    background: none; border: none; cursor: pointer;
+    color: #6a5e55; transition: all 0.2s;
+    border-right: 1px solid var(--warm); font-family: 'DM Sans', sans-serif;
+    white-space: nowrap;
+  }
+  .tab-btn:last-child { border-right: none; }
+  .tab-btn.active { background: var(--ink); color: var(--white); }
+  .tab-btn:hover:not(.active) { background: var(--warm); }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* Org Culture */
+  .service-grid-4 {
+    display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5px;
+    background: var(--warm);
+  }
+  .service-card {
+    background: var(--white); padding: 2.5rem 2rem;
+    transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .service-card::after {
+    content:''; position:absolute; bottom:0; left:0; right:0;
+    height: 3px; background: var(--gold);
+    transform: scaleX(0); transition: transform 0.3s;
+    transform-origin: left;
+  }
+  .service-card:hover { background: var(--mist); }
+  .service-card:hover::after { transform: scaleX(1); }
+  .card-icon {
+    width: 44px; height: 44px; margin-bottom: 1.25rem;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--cream); border-radius: 50%;
+  }
+  .card-icon svg { width:22px; height:22px; }
+  .card-h3 {
+    font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;
+    color: var(--ink); line-height: 1.25;
+  }
+  .card-p { font-size: 0.88rem; color: #6a5e55; line-height: 1.65; font-weight: 300; }
+  .card-tags { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag {
+    font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;
+    background: var(--cream); color: var(--gold);
+    padding: 0.25rem 0.6rem; font-weight: 500;
+  }
+
+  /* Group services */
+  .group-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .group-feature {
+    background: var(--cream); padding: 2.5rem;
+    border-left: 3px solid var(--sage);
+  }
+  .group-feature.accent { border-color: var(--plum); }
+  .group-feature.rust { border-color: var(--rust); }
+  .group-feature.gold { border-color: var(--gold); }
+  .gf-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem; font-weight: 300;
+    color: rgba(122,158,142,0.2); line-height: 1; margin-bottom: 0.25rem;
+  }
+  .group-feature.accent .gf-num { color: rgba(90,61,92,0.2); }
+  .group-feature.rust .gf-num { color: rgba(196,96,58,0.2); }
+  .group-feature.gold .gf-num { color: rgba(184,149,90,0.2); }
+  .gf-h { font-size: 1.4rem; font-weight: 600; margin-bottom: 0.75rem; }
+  .gf-p { font-size: 0.88rem; line-height: 1.7; color: #4a3e35; font-weight: 300; }
+  .gf-list { margin-top: 0.75rem; padding-left: 1rem; }
+  .gf-list li { font-size: 0.83rem; color: #4a3e35; margin-bottom: 0.35rem; line-height: 1.5; }
+
+  /* 1-to-1 */
+  .individual-stack { display: flex; flex-direction: column; gap: 1.5px; background: var(--warm); }
+  .ind-row {
+    background: var(--white); padding: 2rem 2.5rem;
+    display: grid; grid-template-columns: 200px 1fr auto;
+    align-items: center; gap: 2rem; transition: background 0.2s;
+  }
+  .ind-row:hover { background: var(--mist); }
+  .ind-label {
+    font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+    font-weight: 500; color: var(--gold);
+  }
+  .ind-h { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .ind-desc { font-size: 0.84rem; color: #6a5e55; line-height: 1.6; font-weight: 300; }
+  .ind-badge {
+    font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;
+    background: var(--sage); color: var(--white);
+    padding: 0.3rem 0.75rem; white-space: nowrap;
+  }
+
+  /* ── ABOUT ── */
+  #about {
+    background: var(--ink); color: var(--white);
+    padding: 100px 5vw; min-height: auto;
+  }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: start; }
+  .about-left .section-tag { color: var(--gold-lt); }
+  .about-h { font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--white); line-height: 1.15; margin-bottom: 1.5rem; }
+  .about-h em { font-style: italic; color: var(--gold-lt); }
+  .about-p { font-size: 0.95rem; line-height: 1.75; color: rgba(255,255,255,0.72); font-weight: 300; margin-bottom: 1.25rem; }
+  .credential-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 0.75rem; }
+  .cred {
+    display: flex; align-items: flex-start; gap: 0.85rem;
+    padding: 1rem 1.25rem;
+    background: rgba(255,255,255,0.05);
+    border-left: 2px solid var(--gold);
+  }
+  .cred-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; margin-top: 0.45rem; flex-shrink: 0; }
+  .cred-text { font-size: 0.84rem; color: rgba(255,255,255,0.78); line-height: 1.5; }
+  .team-cards { display: flex; flex-direction: column; gap: 1.5rem; }
+  .team-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(184,149,90,0.2);
+    padding: 2rem;
+  }
+  .tc-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem; font-weight: 600; color: var(--white); margin-bottom: 0.25rem;
+  }
+  .tc-title { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-lt); margin-bottom: 1rem; }
+  .tc-p { font-size: 0.84rem; line-height: 1.65; color: rgba(255,255,255,0.68); font-weight: 300; }
+  .tc-creds { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tc-cred {
+    font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase;
+    border: 1px solid rgba(184,149,90,0.35); color: var(--gold-lt);
+    padding: 0.2rem 0.55rem;
+  }
+
+  /* ── CONTACT ── */
+  #contact {
+    background: var(--cream); padding: 100px 5vw;
+    min-height: auto;
+  }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; }
+  .contact-h { font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; margin-bottom: 1.25rem; }
+  .contact-h em { font-style: italic; color: var(--gold); }
+  .contact-p { font-size: 0.95rem; line-height: 1.75; color: #4a3e35; font-weight: 300; margin-bottom: 2rem; }
+  .contact-detail { display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2.5rem; }
+  .cd-item { display: flex; align-items: flex-start; gap: 1rem; }
+  .cd-icon {
+    width: 36px; height: 36px; background: var(--gold);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .cd-icon svg { width:16px; height:16px; }
+  .cd-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); font-weight: 500; }
+  .cd-val { font-size: 0.9rem; color: var(--ink); margin-top: 0.15rem; }
+  .form-wrap {
+    background: var(--white); padding: 2.5rem;
+    box-shadow: var(--shadow);
+  }
+  .form-h { font-size: 1.4rem; font-weight: 600; margin-bottom: 1.75rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1rem; }
+  .form-group label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; color: #6a5e55; }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    border: 1.5px solid var(--warm); padding: 0.75rem 1rem;
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+    background: var(--white); color: var(--ink);
+    transition: border-color 0.2s; outline: none;
+    -webkit-appearance: none; border-radius: 0;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--gold); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%; padding: 1rem; background: var(--ink);
+    color: var(--white); border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; font-size: 0.82rem;
+    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+    transition: background 0.2s;
+  }
+  .form-submit:hover { background: var(--gold); }
+  .form-success {
+    display: none; text-align: center; padding: 1.5rem;
+    background: var(--mist); color: var(--sage-dk); font-size: 0.9rem;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink); color: rgba(255,255,255,0.55);
+    padding: 3rem 5vw; text-align: center;
+    font-size: 0.78rem; letter-spacing: 0.06em;
+  }
+  footer a { color: var(--gold-lt); text-decoration: none; }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--white); margin-bottom: 0.5rem; display: block;
+  }
+  .footer-logo span { color: var(--gold-lt); }
+
+  /* ── APPROACH STRIP ── */
+  .approach-strip {
+    background: var(--sage-dk); color: var(--white);
+    padding: 3.5rem 5vw; text-align: center;
+  }
+  .approach-grid {
+    display: grid; grid-template-columns: repeat(5,1fr);
+    gap: 2rem; max-width: 900px; margin: 2rem auto 0;
+  }
+  .ap { text-align: center; }
+  .ap-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
+  .ap-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+
+  /* ── SCROLL ANIMATIONS ── */
+  .fade-up {
+    opacity: 0; transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── MOBILE ── */
+  @media(max-width: 900px) {
+    #home { grid-template-columns: 1fr; }
+    .home-right { height: 300px; }
+    .home-left { padding: 120px 6vw 60px; }
+    .home-stat-bar { flex-direction: column; }
+    .stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .stat:last-child { border-bottom: none; }
+    .about-grid, .contact-grid, .group-layout { grid-template-columns: 1fr; }
+    .service-grid-4 { grid-template-columns: 1fr 1fr; }
+    .ind-row { grid-template-columns: 1fr; gap: 0.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .approach-grid { grid-template-columns: repeat(3,1fr); }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+  }
+  @media(max-width: 600px) {
+    .service-grid-4 { grid-template-columns: 1fr; }
+    .approach-grid { grid-template-columns: repeat(2,1fr); }
+    .service-tabs { flex-direction: column; }
+    .tab-btn { border-right: none; border-bottom: 1px solid var(--warm); }
+    .tab-btn:last-child { border-bottom: none; }
+  }
+
+  /* Mobile nav overlay */
+  .mobile-nav {
+    display: none; position: fixed; inset:0; background: var(--ink);
+    z-index: 200; flex-direction: column; align-items: center; justify-content: center;
+    gap: 2rem;
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem; color: var(--white); text-decoration: none;
+    font-weight: 300; transition: color 0.2s;
+  }
+  .mobile-nav a:hover { color: var(--gold-lt); }
+  .mobile-close {
+    position: absolute; top: 1.5rem; right: 5vw;
+    background: none; border: none; font-size: 1.5rem;
+    color: var(--white); cursor: pointer;
+  }
+
+  /* Decorative elements */
+  .home-deco {
+    position: absolute; bottom: 40px; left: 8vw;
+    font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #8a7a6a; display: flex; align-items: center; gap: 0.75rem;
+  }
+  .home-deco::after { content:''; display:block; width:48px; height:1px; background: #8a7a6a; }
+  .divider {
+    width: 48px; height: 1px; background: var(--gold);
+    margin: 1.5rem auto;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">Optima <span>Human Flourishing</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Book a Consult</a>
+  <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="toggleMobileNav()">✕</button>
+  <a href="#home" onclick="toggleMobileNav()">Home</a>
+  <a href="#services" onclick="toggleMobileNav()">Services</a>
+  <a href="#about" onclick="toggleMobileNav()">About</a>
+  <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════ HOME ═══════════════════════════════ -->
+<section id="home">
+  <div class="home-left">
+    <div class="home-tag">Transformational Consulting</div>
+    <h1 class="home-h1">
+      Where Organisations<br><em>Flourish</em><br>and Individuals<br>Transcend
+    </h1>
+    <p class="home-desc">
+      Evidence-based, culture-first interventions for enterprises, groups and individuals — grounded in 20+ years of practice in sustainability, human behaviour and organisational systems.
+    </p>
+    <div class="home-btns">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="#contact" class="btn-outline">Book a Discovery Call</a>
+    </div>
+    <div class="home-deco">ISO Certified · ANAB Accredited</div>
+  </div>
+  <div class="home-right">
+    <div class="home-img-grid">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&fit=crop" alt="Professional woman facilitating a workshop">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&fit=crop" alt="Team collaboration in a corporate setting">
+    </div>
+    <div class="home-overlay"></div>
+  </div>
+</section>
+
+<!-- Stat Bar -->
+<div class="home-stat-bar">
+  <div class="stat"><span class="stat-n">20+</span><div class="stat-l">Years Combined Practice</div></div>
+  <div class="stat"><span class="stat-n">7,000+</span><div class="stat-l">Lives Impacted</div></div>
+  <div class="stat"><span class="stat-n">3</span><div class="stat-l">Practice Pillars</div></div>
+  <div class="stat"><span class="stat-n">ISO·AA1000</span><div class="stat-l">Aligned Methodologies</div></div>
+</div>
+
+<!-- ═══════════════════════════════ SERVICES ═══════════════════════════ -->
+<section id="services">
+  <div class="section-header fade-up">
+    <span class="section-tag">What We Offer</span>
+    <h2 class="section-h2">Three Pillars of <em>Transformational</em> Practice</h2>
+    <p class="section-sub">From boardroom culture to personal breakthroughs — our integrated approach meets you where meaningful change begins.</p>
+  </div>
+
+  <div class="service-tabs">
+    <button class="tab-btn active" onclick="switchTab('org')">I. Organisational Culture</button>
+    <button class="tab-btn" onclick="switchTab('group')">II. Group Programs</button>
+    <button class="tab-btn" onclick="switchTab('individual')">III. Individual Coaching & Therapy</button>
+  </div>
+
+  <!-- TAB 1: ORG -->
+  <div class="tab-content active" id="tab-org">
+    <div class="service-grid-4 fade-up">
+      <div class="service-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M3 21h18M3 7v14M21 7v14M6 21V3h12v18"/><path d="M9 9h6M9 13h6M9 17h6"/></svg>
+        </div>
+        <h3 class="card-h3">Organisational Efficiency & Culture Research</h3>
+        <p class="card-p">Enterprise-level diagnostic studies and co-designed interventions that align culture with strategic goals, surfacing systemic friction and building adaptive capacity.</p>
+        <div class="card-tags">
+          <span class="tag">Culture Audit</span>
+          <span class="tag">OD Strategy</span>
+          <span class="tag">Systems Design</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--sage-dk)" stroke-width="1.5"><circle cx="12" cy="8" r="3"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M19 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6M5 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
+        </div>
+        <h3 class="card-h3">Employee Happiness, Wellness & Employer Branding</h3>
+        <p class="card-p">Holistic well-being frameworks, happiness index diagnostics, and EVP design that attract and retain talent — bridging individual flourishing with organisational purpose.</p>
+        <div class="card-tags">
+          <span class="tag">Wellbeing Index</span>
+          <span class="tag">EVP Design</span>
+          <span class="tag">Retention Strategy</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--rust)" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3 class="card-h3">Communication Effectiveness Design</h3>
+        <p class="card-p">Mapping and redesigning inter- and intra-departmental communication flows to eliminate silos, reduce conflict and accelerate decision-making across all levels.</p>
+        <div class="card-tags">
+          <span class="tag">Comm Audit</span>
+          <span class="tag">Flow Design</span>
+          <span class="tag">Conflict Resolution</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--plum)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 class="card-h3">CSR, ESG & Sustainability Strategy</h3>
+        <p class="card-p">ISO 26000-aligned, AA1000-informed sustainability roadmaps. From policy drafting and ESG scorecards to Just Transition planning and green skills development — for companies serious about impact.</p>
+        <div class="card-tags">
+          <span class="tag">ISO 26000</span>
+          <span class="tag">ESG Scorecard</span>
+          <span class="tag">Just Transition</span>
+          <span class="tag">Green Skills</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: GROUP -->
+  <div class="tab-content" id="tab-group">
+    <div class="group-layout fade-up">
+      <div class="group-feature">
+        <div class="gf-num">01</div>
+        <h3 class="gf-h">Gestalt for Group Effectiveness</h3>
+        <p class="gf-p">Drawing on Gestalt field theory, these facilitated experiences help teams move from fragmentation to wholeness — developing present-moment awareness, authentic contact and shared responsibility.</p>
+        <ul class="gf-list">
+          <li>Group process facilitation and awareness experiments</li>
+          <li>Contact cycle work for teams in conflict or transition</li>
+          <li>Boundary, accountability and ownership work</li>
+          <li>Integration with OD strategy and culture change</li>
+        </ul>
+      </div>
+      <div class="group-feature accent">
+        <div class="gf-num">02</div>
+        <h3 class="gf-h">Women's Circles</h3>
+        <p class="gf-p">Safe, structured, and transformative spaces for women in the workplace and community — addressing leadership identity, self-worth, burnout, and the unique pressures faced by women navigating professional and personal worlds.</p>
+        <ul class="gf-list">
+          <li>Leadership identity and voice amplification</li>
+          <li>Peer mentoring and collective wisdom practices</li>
+          <li>Addressing imposter syndrome and boundary-setting</li>
+          <li>Grounded in NLP, somatic awareness and narrative work</li>
+        </ul>
+      </div>
+      <div class="group-feature rust">
+        <div class="gf-num">03</div>
+        <h3 class="gf-h">Departmental Visioning</h3>
+        <p class="gf-p">Facilitated futures-thinking workshops that align a department around a shared, compelling vision — translating organisational purpose into practical, motivating team direction using Balanced Scorecard and Systems Thinking frameworks.</p>
+        <ul class="gf-list">
+          <li>Vision-mission alignment workshops</li>
+          <li>Futures visioning using scenario planning</li>
+          <li>KPI mapping to departmental purpose</li>
+          <li>Stakeholder buy-in facilitation</li>
+        </ul>
+      </div>
+      <div class="group-feature gold">
+        <div class="gf-num">04</div>
+        <h3 class="gf-h">Gender Sensitisation Programs</h3>
+        <p class="gf-p">Evidence-based, experiential programs helping organisations build genuinely inclusive cultures — moving beyond compliance to build empathy, psychological safety, and equitable practice at every level.</p>
+        <ul class="gf-list">
+          <li>POSH awareness and beyond-compliance frameworks</li>
+          <li>Privilege, bias and intersectionality workshops</li>
+          <li>Bystander effectiveness training</li>
+          <li>Policy review and implementation support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: INDIVIDUAL -->
+  <div class="tab-content" id="tab-individual">
+    <div class="individual-stack fade-up">
+      <div class="ind-row">
+        <div class="ind-label">One-to-One Coaching</div>
+        <div>
+          <div class="ind-h">Executive & Personal Effectiveness Coaching</div>
+          <div class="ind-desc">Structured, goal-oriented coaching using LAB Profiling to understand motivation patterns and language behaviours — enabling targeted strategies for performance, leadership presence and career transitions.</div>
+        </div>
+        <span class="ind-badge">LAB Profile</span>
+      </div>
+      <div class="ind-row">
+        <div class="ind-label">Metaphor Therapy</div>
+        <div>
+          <div class="ind-h">Symbolic & Metaphoric Healing</div>
+          <div class="ind-desc">Working with the mind's own symbolic language to access and transform deep-seated limiting beliefs, emotional blocks and unconscious patterns — gently and powerfully.</div>
+        </div>
+        <span class="ind-badge" style="background:var(--plum)">Depth Work</span>
+      </div>
+      <div class="ind-row">
+        <div class="ind-label">CBT · REBT · ACT</div>
+        <div>
+          <div class="ind-h">Evidence-Based Mental Health Counselling</div>
+          <div class="ind-desc">Clinically grounded therapeutic work using Cognitive Behavioural Therapy, Rational Emotive Behaviour Therapy, and Acceptance & Commitment Therapy — for anxiety, depression, stress, relationship challenges and life transitions.</div>
+        </div>
+        <span class="ind-badge" style="background:var(--rust)">Clinically Grounded</span>
+      </div>
+      <div class="ind-row">
+        <div class="ind-label">NLP Practitioner</div>
+        <div>
+          <div class="ind-h">Neuro-Linguistic Programming for Transformation</div>
+          <div class="ind-desc">Using NLP techniques — anchoring, reframing, timeline work and submodality shifts — to rapidly rewire unhelpful patterns, build resources and achieve concrete personal and professional goals.</div>
+        </div>
+        <span class="ind-badge" style="background:var(--sage-dk)">ANLP Certified</span>
+      </div>
+      <div class="ind-row">
+        <div class="ind-label">Personal Effectiveness</div>
+        <div>
+          <div class="ind-h">DISC Analysis & Career Coaching</div>
+          <div class="ind-desc">Behavioural profiling using DISC and LAB frameworks to surface strengths, communication styles, and motivation drivers — creating a personalised effectiveness roadmap for sustainable high performance.</div>
+        </div>
+        <span class="ind-badge" style="background:var(--gold)">DISC Analyst</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH STRIP -->
+<div class="approach-strip">
+  <span class="section-tag" style="color:rgba(255,255,255,0.6)">Our Approach</span>
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:clamp(1.75rem,3vw,2.5rem); font-weight:300; color:#fff; margin-top:0.5rem;">Methodologies That Hold</h2>
+  <div class="approach-grid">
+    <div class="ap"><div class="ap-icon">🧠</div><div class="ap-label">CBT · REBT · ACT</div></div>
+    <div class="ap"><div class="ap-icon">🌿</div><div class="ap-label">ISO 26000 · AA1000</div></div>
+    <div class="ap"><div class="ap-icon">◎</div><div class="ap-label">Gestalt Process</div></div>
+    <div class="ap"><div class="ap-icon">⬡</div><div class="ap-label">Systems Thinking</div></div>
+    <div class="ap"><div class="ap-icon">✦</div><div class="ap-label">NLP · LAB Profiling</div></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+<section id="about">
+  <div class="about-grid fade-up">
+    <div class="about-left">
+      <span class="section-tag">Who We Are</span>
+      <h2 class="about-h">Practice Built on<br><em>Depth, Rigour</em><br>& Lived Experience</h2>
+      <p class="about-p">We are Optima Human Flourishing — a practice anchored in the belief that lasting change requires working simultaneously at the levels of system, group and self.</p>
+      <p class="about-p">Our practitioners bring together rare combinations: policy and law with psychology; sustainability with organisational behaviour; corporate governance with deep human development. This integration is not accidental — it is our core methodology.</p>
+      <p class="about-p">We work with enterprises, chambers of commerce, government bodies and international development organisations across India and globally — always with fidelity to evidence, and care for the human being at the centre.</p>
+      <div class="credential-list">
+        <div class="cred"><div class="cred-dot"></div><div class="cred-text">ISO 26000, ISO 14001, ISO 9001 Certified Lead Auditors and Trainers (ANAB/IRCA)</div></div>
+        <div class="cred"><div class="cred-dot"></div><div class="cred-text">AA1000 Certified Sustainability Assurance Practitioners</div></div>
+        <div class="cred"><div class="cred-dot"></div><div class="cred-text">Cambridge International Certificate for Teachers & Trainers (TVET)</div></div>
+        <div class="cred"><div class="cred-dot"></div><div class="cred-text">Clients include US Embassy, GIZ, FES, Titagarh Wagons, Tata Group companies, Unilever & more</div></div>
+      </div>
+    </div>
+
+    <div class="team-cards">
+      <div class="team-card">
+        <div class="tc-name">Dr. Sanjukta Mukherjee</div>
+        <div class="tc-title">Project Lead · PhD, Business Management (Entrepreneurship Development)</div>
+        <p class="tc-p">Policy leader with 20+ years across Green Skills, Just Transition, Gender Empowerment and ESG Strategy. Former Deputy Director at CII and Joint Director at the Indian Chamber of Commerce. Founder & CEO, Sustainable Design Research Consortium. Doctoral research from Calcutta University. Facilitator with Common Earth (Canada) for Systems Thinking and Circular Economy. Author of published chapters on Green Transformation and Social Entrepreneurship.</p>
+        <div class="tc-creds">
+          <span class="tc-cred">PhD – Calcutta University</span>
+          <span class="tc-cred">DISC Analyst</span>
+          <span class="tc-cred">LAB Profile</span>
+          <span class="tc-cred">CBT Coach</span>
+          <span class="tc-cred">Six Sigma Black Belt</span>
+          <span class="tc-cred">ISO 26000 Lead Auditor</span>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="tc-name">Satrajit Sanyal</div>
+        <div class="tc-title">Expert Consultant · Fellow, World Mediation Organization, Berlin</div>
+        <p class="tc-p">Green Skills, Livelihoods, Employability and Just Transition advocate with 24 years of practice. Consultant with GIZ, FES and WMO Berlin. PECB-certified Global Trainer for ISO 26000 and ANAB Accredited Lead Auditor. Former Head of Consultancy at the Bengal Chamber of Commerce; Deputy Director at CII and ICC. Trained in Blue Ocean Strategy, De Bono Lateral Thinking and NLP by Dr. David J. Lincoln.</p>
+        <div class="tc-creds">
+          <span class="tc-cred">ISO 26000 Lead Auditor</span>
+          <span class="tc-cred">AA1000 CSAP</span>
+          <span class="tc-cred">NLP Practitioner</span>
+          <span class="tc-cred">Balanced Scorecard</span>
+          <span class="tc-cred">GIZ Consultant</span>
+          <span class="tc-cred">WMO Fellow</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ════════════════════════════ -->
+<section id="contact">
+  <div class="contact-grid fade-up">
+    <div>
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="contact-h">Begin Your<br><em>Transformation</em></h2>
+      <p class="contact-p">Whether you are an enterprise seeking culture change, a team ready for deeper cohesion, or an individual at a turning point — we'd love to hear from you. The first conversation is complimentary.</p>
+      <div class="contact-detail">
+        <div class="cd-item">
+          <div class="cd-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.27 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div><div class="cd-label">Phone</div><div class="cd-val">+91 98309 39012 · +91 94334 50596</div></div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div><div class="cd-label">Email</div><div class="cd-val">sanjukta.mukherjee2010@gmail.com<br>sts@optimasolutionsconsulting.com</div></div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div><div class="cd-label">Location</div><div class="cd-val">Kolkata, India · Online sessions available globally</div></div>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80&fit=crop" alt="Collaborative coaching session" style="width:100%;height:220px;object-fit:cover;display:block;">
+    </div>
+
+    <div class="form-wrap">
+      <h3 class="form-h">Request a Discovery Call</h3>
+      <div id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" placeholder="Your first name" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Your last name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+91 00000 00000">
+        </div>
+        <div class="form-group">
+          <label for="org">Organisation / Role</label>
+          <input type="text" id="org" placeholder="Company name and your role">
+        </div>
+        <div class="form-group">
+          <label for="service">Service of Interest *</label>
+          <select id="service" required>
+            <option value="">Select a service area</option>
+            <option>Organisational Culture & Efficiency</option>
+            <option>Employee Wellness & Employer Branding</option>
+            <option>CSR / ESG / Sustainability Strategy</option>
+            <option>Communication Effectiveness</option>
+            <option>Gestalt Group Effectiveness</option>
+            <option>Women's Circles</option>
+            <option>Departmental Visioning</option>
+            <option>Gender Sensitisation Program</option>
+            <option>One-to-One Coaching</option>
+            <option>Mental Health Counselling (CBT/REBT/ACT)</option>
+            <option>NLP Transformation</option>
+            <option>Metaphor Therapy</option>
+            <option>DISC / LAB Profile Assessment</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about your situation</label>
+          <textarea id="message" placeholder="Briefly describe what you're facing or hoping to achieve..."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm()">Request Discovery Call →</button>
+      </div>
+      <div class="form-success" id="formSuccess">
+        ✦ Thank you. We'll be in touch within one business day to schedule your complimentary discovery conversation.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Optima <span>Human Flourishing</span></span>
+  <p style="margin-bottom:0.75rem;">Organisational Culture · Group Wellbeing · Personal Transformation</p>
+  <p>Kolkata, India &nbsp;·&nbsp; <a href="mailto:sanjukta.mukherjee2010@gmail.com">sanjukta.mukherjee2010@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+919830939012">+91 98309 39012</a></p>
+  <p style="margin-top:1.5rem; font-size:0.68rem; opacity:0.4;">© 2025 Optima Human Flourishing. All rights reserved. · ISO 26000 · AA1000 · ANAB Accredited</p>
+</footer>
+
+<script>
+  // Tab switching
+  function switchTab(id) {
+    document.querySelectorAll('.tab-btn').forEach((b,i) => {
+      b.classList.toggle('active', ['org','group','individual'][i] === id);
+    });
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    document.getElementById('tab-'+id).classList.add('active');
+  }
+
+  // Mobile nav
+  function toggleMobileNav() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+
+  // Form submit
+  function submitForm() {
+    const email = document.getElementById('email').value;
+    const fname = document.getElementById('fname').value;
+    const service = document.getElementById('service').value;
+    if (!email || !fname || !service) {
+      alert('Please fill in the required fields (Name, Email, Service).');
+      return;
+    }
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+
+  // Scroll fade-up
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
